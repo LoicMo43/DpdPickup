@@ -1,6 +1,6 @@
 <?php
 
-namespace DpdPickup\Api\Provider;
+namespace DpdPickup\Api\State;
 
 use ApiPlatform\Metadata\Operation;
 use ApiPlatform\State\ProviderInterface;

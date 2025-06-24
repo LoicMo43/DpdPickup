@@ -4,7 +4,7 @@ namespace DpdPickup\Api\Resource;
 
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\GetCollection;
-use DpdPickup\Api\Provider\DpdPickupCheckRightsProvider;
+use DpdPickup\Api\State\DpdPickupCheckRightsProvider;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ApiResource(

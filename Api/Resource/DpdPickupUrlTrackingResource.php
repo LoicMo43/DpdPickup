@@ -4,6 +4,7 @@ namespace DpdPickup\Api\Resource;
 
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\GetCollection;
+use DpdPickup\Api\State\DpdPickupUrlTrackingProvider;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ApiResource(

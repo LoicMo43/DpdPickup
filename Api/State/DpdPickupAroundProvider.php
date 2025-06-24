@@ -1,6 +1,6 @@
 <?php
 
-namespace DpdPickup\Api\Provider;
+namespace DpdPickup\Api\State;
 
 use ApiPlatform\Metadata\Operation;
 use ApiPlatform\State\ProviderInterface;
@@ -32,7 +32,7 @@ class DpdPickupAroundProvider implements ProviderInterface
         $date = date('d/m/Y');
 
         if ($zipcode && $city) {
-            if (in_array($zipcode, $excludeZipCodes)) {
+            if (in_array($zipcode, $excludeZipCodes, true)) {
                 return [];
             }
             $queryParams = [
@@ -48,7 +48,7 @@ class DpdPickupAroundProvider implements ProviderInterface
                 throw new BadRequestHttpException("Customer not connected.");
             }
             $address = AddressQuery::create()
-                ->filterByCustomerId($customer->getId())
+                ->filterByCustomerId(1)
                 ->filterByIsDefault(true)
                 ->findOne();
             if (!$address) {

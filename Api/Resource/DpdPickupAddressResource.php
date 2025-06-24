@@ -4,7 +4,7 @@ namespace DpdPickup\Api\Resource;
 
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
-use DpdPickup\Api\Provider\DpdPickupAddressProvider;
+use DpdPickup\Api\State\DpdPickupAddressProvider;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ApiResource(

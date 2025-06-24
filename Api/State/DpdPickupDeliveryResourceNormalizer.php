@@ -1,6 +1,6 @@
 <?php
 
-namespace DpdPickup\Api\Normalizer;
+namespace DpdPickup\Api\State;
 
 use DpdPickup\Api\Resource\DpdPickupDeliveryResource;
 use DpdPickup\DpdPickup;
